@@ -1,35 +1,8 @@
+@charset "UTF-8";
 /* Extra extra large	xxl	≥1400px */
-@media (min-width: 1440px) {
-    
-}
-
 /* Extra large	xl	≥1200px */
-@media (min-width: 1220px) {
-    
-}
-
 /* large	lg	≥992px */
-@media (min-width: 992px) {
-    
-}
-
 /* Medium md	≥768px */
-@media (min-width: 768px) {
-    
-}
-
 /* small sm	≥576px */
-@media (min-width: 576px) {
-    
-}
 /* Extra small xsm	≥400px */
-@media (min-width: 400px) {
-    
-}
-/* Extra extra small xxsm	≥300px */
-@media (min-width: 300px) {
-    
-}
-
-
-
+/* Extra extra small xxsm	≥300px *//*# sourceMappingURL=responsive.css.map */
