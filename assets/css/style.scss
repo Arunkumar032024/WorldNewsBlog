@@ -10,3 +10,15 @@ nav{
         border: none;
     }
 }
+
+footer{
+    .input-box{
+        outline: none;
+        border: none;
+        &:focus,
+        &:active{
+            outline: none;
+            border: none;
+        }
+    }
+}
