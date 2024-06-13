@@ -3,6 +3,12 @@
 /* Extra large	xl	≥1200px */
 /* large	lg	≥992px */
 /* Medium md	≥768px */
+@media (min-width: 768px) {
+  footer .right .social {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /* small sm	≥576px */
 /* Extra small xsm	≥400px */
 /* Extra extra small xxsm	≥300px *//*# sourceMappingURL=responsive.css.map */

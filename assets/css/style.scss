@@ -10,3 +10,62 @@ nav{
         border: none;
     }
 }
+
+footer{
+    .input-box{
+        outline: none;
+        border: none;
+        &:focus,
+        &:active{
+            outline: none;
+            border: none;
+        }
+    }
+    .right{
+        .list-group{
+            .list-group-item{
+                background-color: transparent;
+                border: none;
+                color: gray;
+                font-weight: lighter;
+                cursor: pointer;
+                transition: color .3s ease-in-out;
+                &:hover{
+                    color: red;
+                    margin-left: 5px;
+                }
+                &:nth-child(1){
+                    color: #fff;
+                    font-size: 1.15rem;
+                    font-weight: bold;
+                    pointer-events: none;
+                    
+                }
+            }
+        }
+        .social{
+            display: flex;
+            padding: 3px;
+            justify-content: space-evenly;
+            i{
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+                border: 1px solid #fff;
+                padding: 5px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: all .3s ease-in;
+                &:hover{
+                    background-color: #fff;
+                    color: gray;
+                }
+            }
+        }
+    }
+     
+    
+}
