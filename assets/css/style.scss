@@ -6,8 +6,13 @@
     box-sizing: border-box;
 }
 nav{
-    .navbar-toggler:focus:not(:focus-visible){
-        border: none;
+    .navbar-toggler{        
+        &:focus:not(:focus-visible){
+            border: none;
+        }
+        .fa-bars{
+            color: #fff;
+        }
     }
 }
 
