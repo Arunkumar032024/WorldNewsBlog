@@ -9,6 +9,36 @@
 nav .navbar-toggler:focus:not(:focus-visible) {
   border: none;
 }
+nav .navbar-toggler .fa-bars {
+  color: #fff;
+}
+
+main .live {
+  bottom: 10px;
+  left: 10px;
+}
+main .live .red-spot {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: red;
+  border-radius: 50%;
+  border: 1px solid red;
+  transition: all 2s linear;
+  animation: blink 2s linear infinite;
+  box-shadow: -1px -1px 9px 1px red;
+}
+@keyframes blink {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
 
 footer .input-box {
   outline: none;

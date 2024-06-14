@@ -5,6 +5,8 @@
     font-family: "Crimson Text", serif;
     box-sizing: border-box;
 }
+
+// nav section style
 nav{
     .navbar-toggler{        
         &:focus:not(:focus-visible){
@@ -15,7 +17,41 @@ nav{
         }
     }
 }
+// End nav section style
 
+// main section style
+main{
+    // banner section style
+    .live{
+        bottom: 10px;
+        left: 10px;
+        .red-spot{
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            background-color: red;
+            border-radius: 50%;
+            border: 1px solid red;
+            transition: all 2s linear;
+            animation: blink 2s linear infinite;
+            box-shadow: -1px -1px 9px 1px red;
+        }
+    }
+    @keyframes blink {
+        0%{
+            transform: scale(0.8);
+        } 50%{
+            transform: scale(1);
+        } 100%{
+            transform: scale(0.8);
+        }
+    }
+    // End banner section style
+}
+// End main section style
+
+
+// Footer section style
 footer{
     .input-box{
         outline: none;
@@ -70,7 +106,6 @@ footer{
                 }
             }
         }
-    }
-     
-    
+    }   
 }
+// End Footer section style
