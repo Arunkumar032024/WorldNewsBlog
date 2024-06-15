@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: "Crimson Text", serif;
@@ -7,88 +8,134 @@
 }
 
 // nav section style
-nav{
-    .navbar-toggler{        
-        &:focus:not(:focus-visible){
+nav {
+    .navbar-toggler {
+        &:focus:not(:focus-visible) {
             border: none;
         }
-        .fa-bars{
+
+        .fa-bars {
             color: #fff;
         }
     }
 }
+
 // End nav section style
 
 // main section style
-main{
+main {
+
     // banner section style
-    .live{
-        bottom: 10px;
-        left: 10px;
-        .red-spot{
-            width: 10px;
-            height: 10px;
-            display: inline-block;
-            background-color: red;
-            border-radius: 50%;
-            border: 1px solid red;
-            transition: all 2s linear;
-            animation: blink 2s linear infinite;
-            box-shadow: -1px -1px 9px 1px red;
+    .banner {
+        .image {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.2);
+                z-index: 2;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                transition: 0.05s;
+            }
+
+            &:hover img {
+                transform: scale(1.05);
+            }
+
+            .live {
+                bottom: 10px;
+                left: 10px;
+
+                .red-spot {
+                    width: 10px;
+                    height: 10px;
+                    display: inline-block;
+                    background-color: red;
+                    border-radius: 50%;
+                    border: 1px solid red;
+                    transition: all 2s linear;
+                    animation: blink 2s linear infinite;
+                    box-shadow: -1px -1px 9px 1px red;
+                }
+            }
+
+            @keyframes blink {
+                0% {
+                    transform: scale(0.8);
+                }
+
+                50% {
+                    transform: scale(1);
+                }
+
+                100% {
+                    transform: scale(0.8);
+                }
+            }
         }
     }
-    @keyframes blink {
-        0%{
-            transform: scale(0.8);
-        } 50%{
-            transform: scale(1);
-        } 100%{
-            transform: scale(0.8);
-        }
-    }
+
     // End banner section style
 }
+
 // End main section style
 
 
 // Footer section style
-footer{
-    .input-box{
+footer {
+    .input-box {
         outline: none;
         border: none;
+
         &:focus,
-        &:active{
+        &:active {
             outline: none;
             border: none;
         }
     }
-    .right{
-        .list-group{
-            .list-group-item{
+
+    .right {
+        .list-group {
+            .list-group-item {
                 background-color: transparent;
                 border: none;
                 color: gray;
                 font-weight: lighter;
                 cursor: pointer;
                 transition: color .3s ease-in-out;
-                &:hover{
+
+                &:hover {
                     color: red;
                     margin-left: 5px;
                 }
-                &:nth-child(1){
+
+                &:nth-child(1) {
                     color: #fff;
                     font-size: 1.15rem;
                     font-weight: bold;
                     pointer-events: none;
-                    
+
                 }
             }
         }
-        .social{
+
+        .social {
             display: flex;
             padding: 3px;
             justify-content: space-evenly;
-            i{
+
+            i {
                 width: 50px;
                 height: 50px;
                 font-size: 1.5rem;
@@ -100,12 +147,14 @@ footer{
                 justify-content: center;
                 cursor: pointer;
                 transition: all .3s ease-in;
-                &:hover{
+
+                &:hover {
                     background-color: #fff;
                     color: gray;
                 }
             }
         }
-    }   
+    }
 }
+
 // End Footer section style
