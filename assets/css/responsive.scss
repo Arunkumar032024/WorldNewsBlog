@@ -30,10 +30,14 @@
     
 }
 /* Extra small xsm	≥400px */
-@media (min-width: 400px) {
-    
+@media (max-width: 400px) {
+    .latest{
+        .desc{
+            display: none;
+        }
+    }
 }
-/* Extra extra small xxsm	≥300px */
+/* Extra extra small	≥300px */
 @media (min-width: 300px) {
     
 }

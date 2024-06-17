@@ -49,9 +49,26 @@ main .banner .image .live .red-spot {
 }
 main .banner .extra-content img {
   width: 100%;
+  min-width: 100px;
   max-width: 125px;
   height: 100%;
   max-height: 125px;
+}
+main .latest {
+  padding: 1rem 0;
+}
+main .latest hr {
+  background-color: black;
+  height: 3px;
+}
+main .latest img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+main .latest .trending-news {
+  background-color: rgba(128, 128, 128, 0.212);
 }
 
 footer .input-box {

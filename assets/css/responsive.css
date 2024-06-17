@@ -11,4 +11,9 @@
 }
 /* small sm	≥576px */
 /* Extra small xsm	≥400px */
+@media (max-width: 400px) {
+  .latest .desc {
+    display: none;
+  }
+}
 /* Extra extra small xxsm	≥300px *//*# sourceMappingURL=responsive.css.map */
