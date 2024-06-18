@@ -70,6 +70,10 @@ main .latest img {
 main .latest .trending-news {
   background-color: rgba(128, 128, 128, 0.212);
 }
+main .card {
+  max-width: 300px;
+  min-height: 400px;
+}
 
 footer .input-box {
   outline: none;
