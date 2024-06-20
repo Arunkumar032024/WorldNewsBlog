@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+img {
+  border-radius: 10px;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
 nav .navbar-toggler:focus:not(:focus-visible) {
   border: none;
 }
@@ -73,6 +82,11 @@ main .latest .trending-news {
 main .card {
   max-width: 300px;
   min-height: 400px;
+  overflow: hidden;
+}
+main .card-body {
+  z-index: 1;
+  background-color: #fff;
 }
 
 footer .input-box {
