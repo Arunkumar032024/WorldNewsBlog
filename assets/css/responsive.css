@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/* Extra extra large	xxl	≥1400px */
-/* Extra large	xl	≥1200px */
-/* large	lg	≥992px */
 /* Medium md	≥768px */
 @media (min-width: 768px) {
   footer .right .social {
@@ -9,11 +6,9 @@
     align-items: center;
   }
 }
-/* small sm	≥576px */
 /* Extra small xsm	≥400px */
 @media (max-width: 400px) {
   .latest .desc {
     display: none;
   }
-}
-/* Extra extra small	≥300px *//*# sourceMappingURL=responsive.css.map */
+}/*# sourceMappingURL=responsive.css.map */
